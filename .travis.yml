@@ -1,0 +1,21 @@
+language: java
+
+branches:
+  only:
+  - master
+
+os:
+  - linux
+
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
+jdk: oraclejdk8
+
+before_install:
+  - sudo apt-get -y install xvfb
+  - sudo apt-get -y install libxmuu-dev libxmuu1-dbg libxtst6-dbg libxt6-dbg libxmu6-dbg libxext6-dbg libxmuu1 libxkbfile1-dbg libxt-dev libxmu-dev libxext-dev libxmu6 libxtst6 libxt6 libxext6 libxtst-dev
+  - sudo apt-get -y install firefox
+
+install: travis_wait mvn install

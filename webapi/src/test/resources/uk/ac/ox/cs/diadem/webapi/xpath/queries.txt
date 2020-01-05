@@ -1,0 +1,42 @@
+#
+# Queries are classified wrt the expected result, with the label TYPE.
+# Below each TYPE it is possible to introduce new queries. It is also possible
+# to change url: just put another one (starting with http://) and a list of queries 
+# that will be run on the last specified url.
+#
+
+
+http://www.google.com 
+
+TYPE:NUM
+count(//div)
+count(//p)
+count(//*)
+
+TYPE:NODESET
+//*[string-length(name()) > 3]
+//*[contains(name(),'p')]
+//div | //p
+//body/ancestor::*
+//*[@id]
+(//*[@id='hplogo'])[last()]
+
+TYPE:STRING
+string(//p[1])
+
+TYPE:BOOLEAN
+count(//*)>1
+
+http://www.kayak.com/flights
+
+TYPE:NODESET
+//input
+
+TYPE:STRING
+string(//input/@type)
+
+
+
+
+
+

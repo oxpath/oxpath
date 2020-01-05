@@ -1,0 +1,21 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# === Known text files ===
+*.txt text
+*.java text
+*.sh text
+*.xml text
+*.html text
+*.css text
+
+*.yml text
+*.md text
+
+# === Known binary files ===
+*.jar binary
+
+# -- Images --
+*.jpg binary
+*.png binary
+*.gif binary

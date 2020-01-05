@@ -1,0 +1,50 @@
+span.annotation-span {
+    pointer-events: auto !important;
+    z-index: 2147483645;
+}
+
+span.annotation-span:hover + div {
+    pointer-events: auto !important;
+	display:block !important;
+	border-radius: .5em;
+	z-index: 2147483647;
+}
+
+.infobox {
+    background-color: yellow;
+    opacity: 0.2;
+    position: static !important;
+    white-space: nowrap;
+	width: 300px;
+	height: auto;
+	font-size: 14px;
+	text-align: center;
+}
+
+
+.behind {
+    background-color: blue;
+    opacity: 0.1;
+}
+
+
+.around {
+    border: 1px solid #2BB0D7;
+}
+
+@-moz-keyframes blink {
+    0% { background: rgba(255,0,0,0.5); }
+    50% { background: rgba(255,0,0,0); }
+    100% { background: rgba(255,0,0,0.5); }
+}
+
+.animate {
+    height: 100px; 
+    width: 100px;
+    -moz-animation-direction: normal;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 3;
+    -moz-animation-name: blink;
+    -moz-animation-timing-function: ease;
+    z-index: 2147483640;   
+}

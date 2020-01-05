@@ -1,0 +1,3 @@
+doc("scholar.google.com")/descendant::input[@name="q"]/{"Einstein"}/following::field()[1]:<huhu:root(huhu:bigDaddy)>/{click/}
+    /.[//h3:<huhu:child(huhu:publication,huhu:paperstack)>
+    	[./a/@href:<lulu:link(xsd:string)=string(.)>]]

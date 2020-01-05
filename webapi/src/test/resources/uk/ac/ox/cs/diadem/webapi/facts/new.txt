@@ -1,0 +1,70 @@
+html_element( e_1_html, 1, 54, 0, html, d1 ).
+html_element( e_2_head, 2, 7, 1, head, d1 ).
+html_element( e_3_title, 3, 6, 2, title, d1 ).
+html_element( e_8_body, 8, 53, 1, body, d1 ).
+html_element( e_9_h1, 9, 12, 8, h1, d1 ).
+html_element( e_13_p, 13, 16, 8, p, d1 ).
+html_element( e_17_a, 17, 20, 8, a, d1 ).
+html_element( e_21_table, 21, 34, 8, table, d1 ).
+html_element( e_22_tbody, 22, 33, 21, tbody, d1 ).
+html_element( e_23_tr, 23, 32, 22, tr, d1 ).
+html_element( e_24_td, 24, 27, 23, td, d1 ).
+html_element( e_28_td, 28, 31, 23, td, d1 ).
+html_element( e_35_p, 35, 36, 8, p, d1 ).
+html_element( e_37_ul, 37, 50, 8, ul, d1 ).
+html_element( e_38_li, 38, 41, 37, li, d1 ).
+html_element( e_42_li, 42, 45, 37, li, d1 ).
+html_element( e_46_li, 46, 49, 37, li, d1 ).
+html_element( e_51_p, 51, 52, 8, p, d1 ).
+
+html_text( t_4, 4, 5, 3, d1 ).
+html_text( t_10, 10, 11, 9, d1 ).
+html_text( t_14, 14, 15, 13, d1 ).
+html_text( t_18, 18, 19, 17, d1 ).
+html_text( t_25, 25, 26, 24, d1 ).
+html_text( t_29, 29, 30, 28, d1 ).
+html_text( t_39, 39, 40, 38, d1 ).
+html_text( t_43, 43, 44, 42, d1 ).
+html_text( t_47, 47, 48, 46, d1 ).
+
+
+html_element( e_3_title, 3, 6, 2, title, d1 ).
+html_element( e_2_head, 2, 7, 1, head, d1 ).
+html_element( e_9_h1, 9, 12, 8, h1, d1 ).
+html_element( e_13_p, 13, 16, 8, p, d1 ).
+html_element( e_17_a, 17, 20, 8, a, d1 ).
+html_element( e_24_td, 24, 27, 23, td, d1 ).
+html_element( e_28_td, 28, 31, 23, td, d1 ).
+html_element( e_23_tr, 23, 32, 22, tr, d1 ).
+html_element( e_22_tbody, 22, 33, 21, tbody, d1 ).
+html_element( e_21_table, 21, 34, 8, table, d1 ).
+html_element( e_35_p, 35, 36, 8, p, d1 ).
+html_element( e_38_li, 38, 41, 37, li, d1 ).
+html_element( e_42_li, 42, 45, 37, li, d1 ).
+html_element( e_46_li, 46, 49, 37, li, d1 ).
+html_element( e_37_ul, 37, 50, 8, ul, d1 ).
+html_element( e_51_p, 51, 52, 8, p, d1 ).
+html_element( e_8_body, 8, 53, 1, body, d1 ).
+html_element( e_1_html, 1, 54, 0, html, d1 ).
+
+
+
+html_element( e_3_title, 3, 6, 2, title, d1 ).
+html_element( e_2_head, 2, 7, 1, head, d1 ).
+html_element( e_9_h1, 9, 12, 8, h1, d1 ).
+html_element( e_13_p, 13, 16, 8, p, d1 ).
+html_element( e_17_a, 17, 20, 8, a, d1 ).
+html_element( e_24_td, 24, 27, 23, td, d1 ).
+html_element( e_28_td, 28, 31, 23, td, d1 ).
+html_element( e_23_tr, 23, 32, 22, tr, d1 ).
+html_element( e_22_tbody, 22, 33, 21, tbody, d1 ).
+html_element( e_21_table, 21, 34, 8, table, d1 ).
+html_element( e_35_p, 35, 36, 8, p, d1 ).
+html_element( e_38_li, 38, 41, 37, li, d1 ).
+html_element( e_42_li, 42, 45, 37, li, d1 ).
+html_element( e_46_li, 46, 49, 37, li, d1 ).
+html_element( e_37_ul, 37, 50, 8, ul, d1 ).
+html_element( e_51_p, 51, 52, 8, p, d1 ).
+html_element( e_8_body, 8, 53, 1, body, d1 ).
+html_element( e_1_html, 1, 54, 0, html, d1 ).
+

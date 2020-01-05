@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<diadem xml:space="preserve">
+		<test-config>
+			<config-name>Configuration two</config-name>
+			<display>
+				<width>1920</width>
+				<height>1280</height>
+				<widescreen>true</widescreen>
+			</display>
+			<add-param>param 1 config 2</add-param>
+		</test-config>
+</diadem>

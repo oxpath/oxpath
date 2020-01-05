@@ -1,0 +1,26 @@
+doc("http://scottfraser.co.uk/SHP02979/woodlands-close-headington")
+    //div[@id='wrapper']:<property>
+        [? ./ancestor::*[not(./parent)]//head//link[@rel='canonical']//@href:<link=normalize-space(.)> ]
+        [? ./ancestor::*[not(./parent)]//div[@class='propertyTitleWrapper']//h3:<title=normalize-space(.)>]
+        [? ./ancestor::*[not(./parent)]//div[@class='property-showcase']//div[@class='propertyPrice']:<price=normalize-space(.)> ]
+        [? ./ancestor::*[not(./parent)]//div[@id='propertyWrapper']:<rooms>
+            [? .//div[@class='propertypage-features']:<bedrooms=normalize-space(substring-before(substring-after(normalize-space(.), 'Bedrooms '), '|'))> ]
+            [? .//div[@class='propertypage-features']:<bathrooms=normalize-space(substring-before(substring-after(normalize-space(.), 'Bathrooms '), '|'))> ]
+            [? .//div[@class='propertypage-features']:<receptions=normalize-space(substring-after(normalize-space(.), 'Receptions '))> ] 
+        ]
+        [? ./ancestor::*[not(./parent)]//div[@id='propertyWrapper']:<information>
+            [? .//div[@class='property-page-text']:<description=normalize-space(substring(., 1, string-length(.)-81))>] 
+        ]
+        [? ./ancestor::*[not(./parent)]//div[@id='propertyCarouselWrapper']:<images>
+            [? .//a//@src:<image=normalize-space(.)>] 
+        ]
+        [? ./ancestor::*[not(./parent)]//div[@id='property-team-member']:<contact>
+            [? .//ul//li[position()<last()]:<contact_information=normalize-space(.)>]
+            [? .//parent::*//li//@href:<contact_email=normalize-space(.)>] 
+        ]
+        [? ./ancestor::*[not(./parent)]//ul[@id='propertyDetailMenu']:<location>
+            [? .//li[@class='map']//a//@href:<geolocation=normalize-space(.)>] 
+        ]
+        [? ./ancestor::*[not(./parent)]//div[@id='wrapper']:<sold=string(count(./ancestor::*[not(./parent)]//div[@id='propertyImg']//img//@class)>0)> ]     
+                 
+      

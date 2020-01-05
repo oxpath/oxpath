@@ -1,0 +1,14 @@
+.info {z-index: 2; border: 1px solid white; color: white; font-weight: bolder; background-color: black;}
+.dataArea { z-index: 1; border: 2px dashed green;}
+.record {z-index: 1; border: 2px dashed red;}
+.attribute { z-index: 1; border: 1px solid blue;}
+.formRoot {z-index: 1; border: 2px dashed green;}
+.formNode1 {z-index: 1; border: 1px solid #FF9980;}
+.formNode2 {z-index: 1; border: 1px solid #FFA3FF;}
+.formNode3 { z-index: 1; border: 1px solid #FF3300;}
+.formNode4 { z-index: 1; border: 1px solid #33AD33;}
+.formNode5 { z-index: 1; border: 1px solid #801A00;}
+.formNode6 { z-index: 1; border: 1px solid #001F33;}
+        
+.hidden { visibility: hidden;}
+.unhidden { visibility: visible;}

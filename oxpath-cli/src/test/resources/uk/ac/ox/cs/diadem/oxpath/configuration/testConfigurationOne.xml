@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<diadem xml:space="preserve">
+		<test-config>
+			<config-name>Configuration one</config-name>
+			<display>
+				<width>800</width>
+				<height>600</height>
+			</display>
+		</test-config>
+</diadem>

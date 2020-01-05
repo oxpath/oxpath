@@ -1,0 +1,12 @@
+README
+
+To generate the parser use the javacc plugin on the file MyOXPathGrammar.jjt
+or from command line
+java -classpath javacc-5.0.jar jjtree MyOXPathGrammar.jjt
+
+The generated AST files in the package uk.ac.ox.cs.diadem.oxpath.parse.ast
+need to be manually fixed, due to limitation of Javacc not able to specify a base class per AST type.
+In particular, each AST*Custom file in package uk.ac.ox.cs.diadem.oxpath.parse.ast.custom
+must be superclass of the corresponding AST* in  uk.ac.ox.cs.diadem.oxpath.parse.ast
+
+E.g., ASTBinaryOpExpr will extend ASTBinaryOpExprCustom

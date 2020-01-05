@@ -1,0 +1,134 @@
+#FAILS doc("aaa")/a[number(10 - 3)]
+#FAILS doc("aaa")//*[@id='item-overview']//ul[contains(@class,'innerlisting')]/li[count(child::*) > 0 and not(contains(.,":"))]
+doc('aaa')/table["Pizza' Pam"]
+doc('aaa')/table["this.style.backgroundColor='#ffffff';"]
+doc('aaa')/table['this.style.backgroundColor="#ffffff";']
+doc('aaa')//div[./{click/}/.:<HTML_DTS=string(.)> ]	
+doc('aaa')//divv[position()]
+doc("aaa")/tr[string-join(//*," ")]
+doc("aaa")/tr[string-join(//*,'ccc')]
+doc("aaa")/tr[replace("abracadabra", "bra", "*")]
+doc("aaa")/tr.class1.class2
+doc("aaa")/tr[1].cit
+doc("aaa")/tr[.#='Next']
+doc("aaa")/tr[.~='Next']
+doc("aaa")//a#cit
+doc("aaa")/a.cit
+doc("aaa")/a['pippo pluto'~='po pl']
+doc("aaa")/*.cit
+doc("aaa")/self::node().cit
+doc("aaa")/a.cit[1]
+doc("aaa")/a.cit/b
+doc("aaa")/a.cit/b[1]
+doc("aaa")/a.cit[self::node().cit]
+doc("aaa")/a.cit/b.cit
+doc("aaa")/a.cit/{click/}/b
+doc('aaa')//a/{click/}/.:<HTML_DTS=current-url()>
+doc('aaa')//a[./{click/}/.:<HTML_DTS=current-url()>]
+doc("aaa")/a[1]/{click/}/b
+doc("aaa")/a[? .//strong/text():<period_unit=substring(normalize-space(.),string-length(substring-before(normalize-space(.)," "))+1)> ]
+doc('aaa')/a[./{click}][/b]:<A=position()>
+doc('aaa')/a[1][./{click}]
+doc("aaa")/a[.[position()]:<A>]
+doc("aaa")/a[position():<A>]
+doc("aaa")/a[1:<A>]
+doc("aaa")/a[style::color]
+doc("aaa")/a[field()]
+doc("aaa")/a[./field()]
+doc("aaa")/a[/field()]/b
+doc("aaa")/a[.[1]/field()[1]]/b
+doc("aaa")/a[.[1]/style::color/c]/b
+doc("aaa")/a[position()=(/style::color/c)]
+doc("aaa")/a[.[1]/{click/}]/b
+doc("aaa")/a[.[1]:<A>]/b
+doc("aaa")/a[.[1]/c]/b
+doc('aaa')/a[1][./{click}][1]
+doc('aaa')/a/b:<A=position()>
+doc("aaa")/a/style::color/c
+doc("aaa")/a:<record>[.:<price>]
+doc('aaa')/a[(//a)[position()]]
+doc('aaa')/a[(//a)[current-url()]]
+doc("http://www.watsoncars.co.uk/used-cars")//*[@id='stockListComponent']/ul/li:<record>[.//span[contains(@class,'stockprice')]:<price=string(.)>]
+doc('aaa')/a/(./{click/})*/a[2]:<A>
+doc('aaa')/{click}/a[? .]/(./{click/})*/.[? .][1]/a:<A>
+doc('aaa')/a[? .][? .][1]/a/(./{click/})*/.:<A>
+doc('aaa')/a[? .][1][? .]/a:<A>
+doc('aaa')/a[1][? .][? .]/a:<A>
+doc('aaa')/a[.[./(./{click/})*][1]]:<A>
+doc('aaa')/a[.[1][/{click}]]:<A>
+doc('aaa')/a[.[/{click}]:<B>]:<A>
+doc('aaa')/a[.[/{click}]/a]:<A>
+doc('aaa')/{click/}/a[2]:<A>
+doc('aaa')/{click}/a[? .]/{click}/.[? .][1]/a:<A>
+doc('aaa')/a[? .][? .][1]/a:<A>
+doc('aaa')/a[? .][1][? .]/a:<A>
+doc('aaa')/a[1][? .][? .]/a:<A>
+doc('aaa')/a[.[/{click}][1]]:<A>
+doc('aaa')/a[.[1][/{click}]]:<A>
+doc('aaa')/a[.[/{click}]:<B>]:<A>
+doc('aaa')/a[.[/{click}]/a]:<A>
+doc("aaa")/child::a[self::node()/self::node()[self::node()/self::node()[./{click}]=1.0]]:<A>
+doc('aaa')/a[b[1]]:<R>
+doc('aaa')/a[(//a)[1]]
+doc('aaa')/a[(//a[1][./{click}])[1]]/b
+doc('aaa')/a/b[1]/c[1][/a/b[1]][?.:<R>]/a/b[1]/c[1][/a/b[1]][?.:<R>]
+doc('aaa')/a[./{click}]:<A>
+doc('aaa')/a[.[.[2]=1]/a]:<A>
+doc('aaa')/a/b[1]/c[1][/a/b[1]]:<R>
+doc('aaa')/a[.[2]=1]:<A>
+doc('aaa')/a[2][//a]:<A>
+doc('aaa')/a[2]:<A>
+doc('aaa')/a[.[2]]:<A>
+doc('aaa')/a[//a]/a[2]:<A>
+//div/p:<R>[1]
+/div1/div2/a:<R>
+doc("http://scholar.google.co.uk/citations?user=LBoZETEAAAAJ&hl=en&oi=ao")/(//div.cit-dgb[1]//td/a[.='Next']/{click[wait=1]/})*//tr[contains(@class,"item")]:<paper>
+/a/b/c[1]/d/e/f[1]
+/a/b/c[1]
+/a[1]
+/a/b/c
+/a[string(.)][1][.:<R>][@class][//b=//b]/c[1]/dsomeId[1]/{click}/dsomeId[1][string(.)][1][@class][//b=//b]/c[1]/d
+/a/b[.:<R>]
+/a[?1]/{click}/a[string(.)]/d
+//a/b/c[?1]/dsomeId
+/a/b/style::color/field()/c/d
+doc("http://www.amazon.com")/descendant::input[@type=1][1]/div/input
+/c[string(.)][1][@class]
+/descendant::input[@type=//a/b[1]]
+//a[1]//b[2]//c[3]
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{$test}/following::field()[1]/{click}//a:<test=string(.)>
+((/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click}//a:<test=string(.)>) | (/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click}//a:<test=string(.)>))
+(/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click}//a:<test=string(.)>)[@href]
+((/descendant::input[@type='text'][1]/{"test"}/following::field()[--1]/{click}//a:<test=string(.)>) | (/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click}//a:<test=string(.)>))[@href]
+/(/div/html)*/{click}
+/(/div/html)*/(/div/html)*/{click}
+html/(div/html)*/(div/html)*/{click}
+html//div[position()=2][h1]
+html//div[4][h1]
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<test=string(.)>
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<testt:x=string(.)>
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<testt:x(rrr)>
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<testt:x(rrr, g:g)>
+#se c'e una action o qualcosa di non xpath non collasso il predicate
+#se c'e' un positional e action insieme non posso collassare l'ultimo step cioe' /a/b/cdata.getResult()[1][click] non posso fare /a/b/c ma solo /a/b
+doc('a')/descendant::pa[position() < 3]/.:<A>/.
+doc('aaa')//a[? .:<R>]/relative
+doc('a')/relative/{click/}/absolute
+doc('aaa')//a/{1}/.
+doc('aaa',[wait=5])//a/{1}/.
+doc('aaa')//a/{click[wait=5]/}/.
+doc('aaa')//a/{click}/./{focus}/./{"fill"}/a[1]
+doc('aaa')//a/{click/}/./{focus/}/./{"fill"/}/a[1]
+doc('aaa')//a/{click}/.:<record>:<record>/a[1]
+doc('aaa')//a/{click}/.:<record>/{click}/.[1]
+doc('aaa')//a/{click}/.:<record>:<attr=string(.)>
+doc('aaa')//a/{click}/.:<record>[? .:<attr=string(.)>]
+doc('aaa')//a/{click}/.:<record>[? .:<attr=string(.)>][? .:<attr=string(.)>]
+doc('aaa')//a/{click}/.:<record>[? .:<attr=string(.)>]/a
+doc('aaa')//a/{click}/.:<record>[? .:<attr=string(.)>]/{click}/.:<record>
+doc('aaa')//a/{click}/.:<record>[? .:<attr=string(.)>]:<record>
+doc('aaa')//a/{click}/.:<record>[? .:<attr=string(.)>][? .:<attr=string(.)>]/a
+doc('aaa')/relative/{click}/.:<record>[? .:<attr=string(.)>][? .:<attr=string(.)>]/a
+doc('http://www.wwagency.co.uk/')//label[@for = 'sale_type_id']/following-sibling::text()/following-sibling::select/{1}//form/div[@class = 'formbtn-ctn'][last()]/button[@class = 'formbtn']/{click}/.:<data_area>[? .//div[@class = 'pagenumlinks'][1]//span/text():<search_results_number=normalize-space(.)>][? .//div[@class = 'pagenumlinks'][1]//span/text():<records_number=normalize-space(.)>]//div[contains(@class, 'proplist_wrap')]:<record>[? .:<origin_url=current-url()>][? .//span[. = 'Bedrooms:']/following-sibling::strong/text():<bedroom_number=normalize-space(.)>]
+doc('aaa')//a/{click}/.:<record>[? 2:<attr=string(.)>]
+doc('aaa')//a/{click}/.:<record>[? count(//a):<attr=string(.)>]

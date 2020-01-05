@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<diadem xml:space="preserve">
+	<logfile>src/test/config/TestLog4j.properties</logfile>
+	<testing>
+	<mode>INTERACTIVE</mode>
+	</testing>
+	
+</diadem>

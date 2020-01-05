@@ -1,0 +1,35 @@
+doc("http://www.amazon.com")/descendant::input[@type=1][1][is-visible()][is-invisible()]
+doc("www.amazon.com")/descendant::td[current-url(opex:plus(opex:minus(3,3),9))]
+doc("www.amazon.com")/descendant::td:<record>[.:<attr=current-url(opex:plus(opex:minus(3,3),9))>]
+doc("www.amazon.com")/descendant::td:<record>[.:<attr=string(number())>]
+/div1/div2/a:<R>
+//div/p:<R>[1]
+doc("http://scholar.google.co.uk/citations?user=LBoZETEAAAAJ&hl=en&oi=ao")/(//div.cit-dgb[1]//td/a[.='Next']/{click[wait=1]/})*//tr[contains(@class,"item")]:<paper>
+/a/b/c[1]/d/e/f[1]
+/a/b/c[1]
+/a[1]
+/a/b/c
+/a[string(.)][1][.:<R>][@class][//b=//b]/c[1]/dsomeId[1]/{click}/dsomeId[1][string(.)][1][@class][//b=//b]/c[1]/d
+/a/b[.:<R>]
+/a[?1]/{click [noback]}/a[string(.)]/d
+//a/b/c[?1]/dsomeId
+/a/b/style::color/field()/c/d
+doc("http://www.amazon.com")/descendant::input[@type=1][1]/div/input
+/c[string(.)][1][@class]
+/descendant::input[@type=//a/b[1]]
+//a[1]//b[2]//c[3]
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{$test}/following::field()[1]/{click}//a:<test=string(.)>
+((/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click}//a:<test=string(.)>) | (/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click}//a:<test=string(.)>))
+(/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click}//a:<test=string(.)>)[@href]
+((/descendant::input[@type='text'][1]/{"test"}/following::field()[--1]/{click}//a:<test=string(.)>) | (/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click}//a:<test=string(.)>))[@href]
+/(/div/html)*/{click}
+/(/div/html)*/(/div/html)*/{click}
+html/(div/html)*/(div/html)*/{click}
+html//div[position()=2][h1]
+html//div[4][h1]
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<test=string(.)>
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<testt:x=string(.)>
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<testt:x(rrr)>
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<testt:x(rrr, g:g)>
+#se c'e una action o qualcosa di non xpath non collasso il predicate
+#se c'e' un positional e action insieme non posso collassare l'ultimo step cioe' /a/b/c[1][click] non posso fare /a/b/c ma solo /a/b

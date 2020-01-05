@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>basic form test</title>
+<style></style>
+
+<script type="text/javascript">
+function handleIt() {
+	var text= document.getElementById('text').value;
+	text+= "-"+document.getElementById('option3').selected;
+	text+="-"+document.getElementById('radio2').checked;
+    document.getElementById('out').textContent = text;
+  }
+</script>
+</head>
+
+<body>
+<form action="javascript:handleIt()" method="post">    
+    <div>
+        <label for="name">Name:</label>
+        <input id='text' type="text" id="name" />
+    </div>
+
+   <div>
+   <select name='flavour' id='select'> 
+   		<option id='option1' selected="" value="van">Vanilla </option>
+		<option id='option2' value="str">Strawberry </option>
+		<option id='option3' value="rr">Rum and Raisin </option>
+	</select>
+	</div>
+	
+	
+<div>
+    <input id='radio1' name="flavor" value="van" checked="" type="radio">Vanilla<br>
+    <input id='radio2' name="flavor" value="str" type="radio">Strawberry<br>
+</div>
+
+	<div class="button">
+        <button id='button' type="submit">Send your message</button>
+    </div>
+    
+    
+</form>
+
+<p id='out'>aaa<p>
+
+</body></html>

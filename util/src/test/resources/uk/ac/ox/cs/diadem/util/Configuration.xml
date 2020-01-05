@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<diadem xml:space="preserve">
+	<override-property-name>envOverride</override-property-name> <!-- ? -->
+	<webdriver>
+		<options>
+	<!-- 		this is relative path in the .diadem folder -->
+			<default-executable>firefox_47.0.1/firefox_start.sh</default-executable>
+			<xvfb-executable>firefox_47.0.1/firefox_xvfb_start.sh</xvfb-executable>
+			<collect-stats>false</collect-stats>
+			<!-- use a negative value for no timeout -->
+	<!-- 		<page-load-timeout-default>600</page-load-timeout> -->
+			<timeouts> <!-- dafaults-->
+				<max-script-run-time-sec>0</max-script-run-time-sec>
+				<page-load-sec>600</page-load-sec>
+			</timeouts>
+			<window>
+				<width>1280</width>
+				<height>800</height>
+			</window>
+		</options>
+		
+		<js-functions>
+			<addCSSClass>return addCSSClass(arguments[0],arguments[1]);</addCSSClass>
+			<appendChild>return appendChild(arguments[0],arguments[1]);</appendChild>
+			<appendTextChild>return appendTextChild(arguments[0],arguments[1],arguments[2]);</appendTextChild>
+			<appendRule>appendRule(arguments[0],arguments[1]);</appendRule>
+			<asXML>return asXML(arguments[0]);</asXML>
+			<attachOverlay>return attachOverlay(arguments[0],arguments[1],arguments[2],arguments[3],arguments[4],arguments[5],arguments[6],arguments[7],arguments[8],arguments[9],arguments[10]);</attachOverlay>
+			<clickOnElement>clickOnElement(arguments[0]);</clickOnElement>
+			<compareDocumentPosition>return compareDocumentPosition(arguments[0],arguments[1]);</compareDocumentPosition>
+			<compareDocumentPositionDocToDoc>return compareDocumentPositionDocToDoc(arguments[0].parentNode,arguments[1].parentNode);</compareDocumentPositionDocToDoc>
+			<compareDocumentPositionDocToElement>return compareDocumentPositionDocToElement(arguments[0].parentNode,arguments[1]);</compareDocumentPositionDocToElement>
+			<compareDocumentPositionElementToDoc>return compareDocumentPositionElementToDoc(arguments[0],arguments[1].parentNode);</compareDocumentPositionElementToDoc>
+			<compareDocumentPositionElementToText>return compareDocumentPositionElementToText(arguments[0],arguments[1],arguments[2])</compareDocumentPositionElementToText>
+			<compareDocumentPositionTextToElement>return compareDocumentPositionTextToElement(arguments[0],arguments[1],arguments[2]);</compareDocumentPositionTextToElement>
+			<compareDocumentPositionTextToText>return compareDocumentPositionTextToText(arguments[0],arguments[1],arguments[2],arguments[3]);</compareDocumentPositionTextToText>
+			<containsCSSClass>return containsCSSClass(arguments[0],arguments[1]);</containsCSSClass>
+			<createElementAndAppendToBody>return createElementAndAppendToBody(arguments[0],arguments[1]);</createElementAndAppendToBody>
+			<createRangeTextToText>return createRangeTextToText(arguments[0],arguments[1],arguments[2],arguments[3],arguments[4],arguments[5]);</createRangeTextToText>
+			<deleteRule>deleteRule(arguments[0],arguments[1]);</deleteRule>
+			<detachOverlay>detachOverlay(arguments[0]);</detachOverlay>
+			<disconnect>disconnect(arguments[0]);</disconnect>
+			<elementFromPosition>return elementFromPosition(arguments[0],arguments[1]);</elementFromPosition>
+			<enableCSSStyleSheet>enableCSSStyleSheet(arguments[0]);</enableCSSStyleSheet>
+			<evalXPath>return evalXPath(arguments[0],arguments[1],arguments[2],arguments[3],arguments[4]);</evalXPath>
+			<evalXPathBulk>return evalXPathBulk(arguments[0],arguments[1],arguments[2],arguments[3],arguments[4]);</evalXPathBulk>
+			<disableCSSStyleSheet>disableCSSStyleSheet(arguments[0]);</disableCSSStyleSheet>
+			<findRulesBySelectorText>return findRulesBySelectorText(arguments[0], arguments[1]);</findRulesBySelectorText>
+			<isOnTarget>isOnTarget(arguments[0]);</isOnTarget>
+			<getAttributes>return getAttributes(arguments[0]);</getAttributes>
+			<getBoundingBox>return getBoundingBox(arguments[0]);</getBoundingBox>
+			<getChecked>return getChecked(arguments[0]);</getChecked>
+			<getChildNodes>return getChildNodes(arguments[0]);</getChildNodes>
+			<getChildrenOfDocument>return getChildrenOfDocument(arguments[0].parentNode);</getChildrenOfDocument>
+			<getClassAttributes>return getClassAttributes();</getClassAttributes>
+			<getDocumentDimension>return getDocumentDimension();</getDocumentDimension>
+			<getDocumentElement>return getDocumentElement();</getDocumentElement>
+			<getDocumentElementTextContent>return getDocumentElementTextContent(arguments[0].parentNode);</getDocumentElementTextContent>
+			<getFirstChild>return getFirstChild(arguments[0]);</getFirstChild>
+			<getFirstChildOfDocument>return getFirstChildOfDocument(arguments[0].parentNode);</getFirstChildOfDocument>
+			<getFormMethod>return getFormMethod(arguments[0]);</getFormMethod>
+			<getFormElements>return getFormElements(arguments[0]);</getFormElements>
+			<getIDAttributes>return getIDAttributes();</getIDAttributes>
+			<getImageSources>return getImageSources();</getImageSources>
+			<getInnerHTML>return getInnerHTML(arguments[0]);</getInnerHTML>
+			<getLastChild>return getLastChild(arguments[0]);</getLastChild>
+			<getLastChildOfDocument>return getLastChildOfDocument(arguments[0].parentNode);</getLastChildOfDocument>
+			<getLinkHRefs>return getLinkHRefs();</getLinkHRefs>
+			<getLocalName>return getLocalName(arguments[0]);</getLocalName>
+			<getNeighbourhood>return getNeighbourhood(arguments[0],arguments[1]);</getNeighbourhood>
+			<getNextSibling>return getNextSibling(arguments[0]);</getNextSibling>
+			<getNextSiblingOfTextNode>return getNextSiblingOfTextNode(arguments[0],arguments[1]);</getNextSiblingOfTextNode>
+			<getNodeName>return getNodeName(arguments[0]);</getNodeName>
+			<getNodeValue>return getNodeValue(arguments[0]);</getNodeValue>
+			<getOuterHTML>return getOuterHTML(arguments[0]);</getOuterHTML>
+			<getParentNode>return getParentNode(arguments[0]);</getParentNode>
+			<getPreviousSibling>return getPreviousSibling(arguments[0]);</getPreviousSibling>
+			<getPreviousSiblingOfTextNode>return getPreviousSiblingOfTextNode(arguments[0],arguments[1]);</getPreviousSiblingOfTextNode>
+			<getProperty>return getProperty(arguments[0],arguments[1]);</getProperty>
+			<getRulePropertyValue>return getRulePropertyValue(arguments[0],arguments[1],arguments[2]);</getRulePropertyValue>
+			<getScrollX>return getScrollXY()[0];</getScrollX>
+			<getScrollY>return getScrollXY()[1];</getScrollY>
+			<getSelectorText>return getSelectorText(arguments[0],arguments[1]);</getSelectorText>
+			<getTextContent>return getTextContent(arguments[0]);</getTextContent>
+			<getValue>return getValue(arguments[0]);</getValue>
+			<getXPathLocator>return getXPathLocator(arguments[0],arguments[1],arguments[2]);</getXPathLocator>
+			<insertBefore>return insertBefore(arguments[0],arguments[1],arguments[2]);</insertBefore>
+			<insertBeforeText>return insertBeforeText(arguments[0],arguments[1],arguments[2]);</insertBeforeText>
+			<insertTextBeforeElement>return insertTextBeforeElement(arguments[0],arguments[1],arguments[2],arguments[3]);</insertTextBeforeElement>
+			<insertTextBeforeText>return insertTextBeforeText(arguments[0],arguments[1],arguments[2],arguments[3],arguments[4]);</insertTextBeforeText>
+			<isAncestorOf>return isAncestorOf(arguments[0],arguments[1]);</isAncestorOf>
+			<isCSSStyleSheetDisabled>return isCSSStyleSheetDisabled(arguments[0]);</isCSSStyleSheetDisabled>
+			<isEqualDocument>return isEqualDocument(arguments[0].parentNode,arguments[1].parentNode);</isEqualDocument>
+			<isEqualNode>return isEqualNode(arguments[0],arguments[1]);</isEqualNode>
+			<isEqualTextNode>return isEqualTextNode(arguments[0],arguments[1],arguments[2],arguments[3]);</isEqualTextNode>
+			<isSameDocument>return isSameDocument(arguments[0].parentNode,arguments[1].parentNode);</isSameDocument>
+			<isSameNode>return isSameNode(arguments[0],arguments[1]);</isSameNode>
+			<isSameTextNode>return isSameTextNode(arguments[0],arguments[1],arguments[2],arguments[3]);</isSameTextNode>
+			<makeURLAbsolute>return makeURLAbsolute(arguments[0],arguments[1]);</makeURLAbsolute>
+			<observeCSSProperties>observeCSSProperties(arguments[0],arguments[1],arguments[2]);</observeCSSProperties>
+			<prettyToString>return prettyToString(arguments[0]);</prettyToString>
+			<removeAttribute>removeAttribute(arguments[0],arguments[1]);</removeAttribute>
+			<removeChild>return removeChild(arguments[0],arguments[1]);</removeChild>
+			<removeCSSClass>return removeCSSClass(arguments[0],arguments[1]);</removeCSSClass>
+			<removeRuleProperty>return removeRuleProperty(arguments[0],arguments[1],arguments[2]);</removeRuleProperty>
+			<removeTextChild>return removeTextChild(arguments[0],arguments[1],arguments[2]);</removeTextChild>
+			<ruleListLength>return ruleListLength(arguments[0]);</ruleListLength>
+			<selectText>return selectText(arguments[0],arguments[1]);</selectText>
+			<setAttribute>setAttribute(arguments[0],arguments[1],arguments[2]);</setAttribute>
+			<setChecked>setChecked(arguments[0],arguments[1]);</setChecked>
+			<setCSSProperty>return setCSSProperty(arguments[0],arguments[1],arguments[2]);</setCSSProperty>
+			<setCSSProperties>return setCSSProperties(arguments[0],arguments[1],arguments[2]);</setCSSProperties>
+			<setProperty>return setProperty(arguments[0],arguments[1],arguments[2]);</setProperty>
+			<setRulePropertyValue>setRulePropertyValue(arguments[0],arguments[1],arguments[2],arguments[3]);</setRulePropertyValue>
+			<setSelected>setSelected(arguments[0],arguments[1]);</setSelected>
+			<setSelectedIndex>setSelectedIndex(arguments[0],arguments[1]);</setSelectedIndex>
+			<setSelectedOptionByText>setSelectedOptionByText(arguments[0],arguments[1]);</setSelectedOptionByText>
+			<setTextContent>return setTextContent(arguments[0],arguments[1]);</setTextContent>
+			<setTextContentForTextNode>return setTextContentForTextNode(arguments[0],arguments[1],arguments[2]);</setTextContentForTextNode>
+			<setValue>return setValue(arguments[0],arguments[1]);</setValue>
+			<takeCSSRecords>return takeCSSRecords(arguments[0],arguments[1]);</takeCSSRecords>
+			<takeRecords>return takeRecords(arguments[0]);</takeRecords>
+			<testXPath>return testXPath();</testXPath>
+			<toggleCSSClass>return toggleCSSClass(arguments[0],arguments[1]);</toggleCSSClass>
+		</js-functions>
+	</webdriver>
+	
+	<platforms>
+  	<platform>
+		<name>Linux</name>
+		<installation-path>
+			<home>.diadem</home>
+			<webdriver>
+				<path>uk/ac/ox/cs/diadem/webdriver_env</path><!--  TODO check the use of it -->
+				<run-file>uk/ac/ox/cs/diadem/webdriver_env/firefox_47.0.1/firefox_start.sh</run-file>
+				<run-xvfb-file>uk/ac/ox/cs/diadem/webdriver_env/firefox_47.0.1/firefox_xvfb_start.sh</run-xvfb-file>
+			</webdriver>
+		</installation-path>
+		<webapi>
+			<useragent>Mozilla/5.0 (X11; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</useragent>
+		</webapi>
+	</platform>
+	
+	<platform>
+		<name>MacOSX</name>
+		<installation-path>
+			<home>.diadem</home>
+			<webdriver>
+				<path>uk/ac/ox/cs/diadem/webdriver_env</path>
+			</webdriver>
+		</installation-path>
+		<webapi>
+			<useragent>Mozilla/5.0 (X11; Linux x86_64; rv:28.0) Gecko/20100101 Firefox/28.0</useragent>
+		</webapi>
+	</platform>
+	
+	<platform>
+		<name>Windows</name>
+		<installation-path>
+			<home>diadem_home</home>
+			<webdriver>
+				<path>uk/ac/ox/cs/diadem/webdriver_env</path>
+			</webdriver>
+		</installation-path>
+		<webapi>
+			<useragent>Mozilla/5.0 (X11; Linux x86_64; rv:28.0) Gecko/20100101 Firefox/28.0</useragent>
+		</webapi>
+	</platform>
+  </platforms>
+</diadem>

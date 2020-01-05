@@ -1,0 +1,4 @@
+count(doc("http://diadem.cs.ox.ac.uk/oxpath/experiments/www/scholar/index.html")//*)%%%104
+string(doc("scholar.google.com")/descendant::input[@name="q"]/@name)%%%q
+count(doc("http://www.google.com")/descendant::input)%%%10
+boolean(doc("http://www.yahoo.com")/descendant::input)%%%true

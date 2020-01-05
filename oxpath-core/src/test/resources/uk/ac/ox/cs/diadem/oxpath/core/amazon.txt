@@ -1,0 +1,1 @@
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click/}/descendant::input:<test=string(.)>

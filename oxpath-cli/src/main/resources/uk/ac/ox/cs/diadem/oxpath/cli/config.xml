@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<diadem xml:space="preserve">
+		<version>oxpath-cli v1.0.1 (2017)
+OXPath v2.2.0 (2017)
+
+Copyright (c) 2011-2015, DIADEM Team (http://diadem.cs.ox.ac.uk/)
+Copyright (c) 2016-2017, OXPath Team (https://github.com/oxpath/)</version>
+	<cli>
+		<usage>oxpath-cli [options]</usage>
+		
+		<!-- Control parameters -->
+		<help-desc>print this help message</help-desc>
+		<version-desc>print product version and exit</version-desc>
+		<query-desc>file containing the oxpath expression to evaluate</query-desc>
+		<query-valdesc>file</query-valdesc>		
+
+		<!-- Options -->
+		<variables-desc>file containing a variable dictionary (Java Properties format) for an oxpath template</variables-desc>
+		<variables-valdesc>file</variables-valdesc>
+		<output-format-desc>output extracted data in a specified format("xml" is default). rscsv and rsjdbc stream basic records into CSV or relational database, respectively. hcsv and hjdbc serialise hierarchy of entities into a single denormalised relation in the form of CSV or into the relational database</output-format-desc>
+		<output-format-default>xml</output-format-default>
+		<output-format-valdesc>xml,json,rscsv,rsjdbc,hcsv,hjdbc</output-format-valdesc>
+		
+		<xmlcdata-desc>If XML mode is enabled, the attribute's value is wrapped into CDATA sections, useful when the output contains not allowed XML characters (disabled by default)</xmlcdata-desc>
+		<xmlcdata-default>false</xmlcdata-default>
+		
+		<jsonarr-desc>use array for values</jsonarr-desc>
+		<jsonarr-default>false</jsonarr-default>
+		
+		<jdbcpar-desc>XML file with JDBC parameters, such as db.driver, db.url, db.user, db.password, db.schema.schema-name ("public" is default), db.schema.table-name, db.override, db.batch-size</jdbcpar-desc>
+		<jdbcpar-valdesc>XML file</jdbcpar-valdesc>
+		
+		<rsent-desc>name of the entity to be extracted</rsent-desc>
+		<rsent-valdesc>string</rsent-valdesc>
+		
+		<rsattrs-desc>list of attributes to be extracted in a form a,b,c,d</rsattrs-desc>
+		<rsattrs-valdesc>string</rsattrs-valdesc>
+		
+		<hents-desc>list of attributes to be extracted in a form a/b,c/d</hents-desc>
+		<hents-valdesc>string</hents-valdesc>
+		
+		<multival-desc>allow multiple values per attribute (disabled by default)</multival-desc>
+		<multival-default>false</multival-default>
+		
+		<output-desc>the path of the output file in case of XML, CSV or JSON output handler (not specified by default, output into the default console)</output-desc>
+		<output-valdesc>file</output-valdesc>
+		
+		<logfile-desc>log4j configuration file. If not provided, a default one is applied</logfile-desc>
+		<logfile-valdesc>file</logfile-valdesc>
+		
+		<conffile-desc>configuration file</conffile-desc>
+		<logfile-valdesc>file</logfile-valdesc>
+		
+		<browser>
+			<exec-desc>a custom executable path for Firefox (not specified by default)</exec-desc>
+			<exec-valdesc>file</exec-valdesc>
+			<xvfb-desc>Firefox running in the X virtual framebuffer (disabled by default)</xvfb-desc>
+			<xvfb-default>false</xvfb-default>
+			<display-desc>the display port to use in the XVFB mode, e.g., :0 (not specified by default)</display-desc>
+			<display-valdesc>display number</display-valdesc>
+			<img-desc>enable browser images download (disabled by default)</img-desc>
+			<img-default>false</img-default>
+			<plugins-desc>enable browser's plugins, e.g., flash, java (disabled by default)</plugins-desc>
+			<plugins-default>false</plugins-default>
+    		<lat-desc>Latitude (not specified by default)</lat-desc>
+    		<lat-valdesc>float</lat-valdesc>
+    		<lon-desc>Longitude (not specified by default)</lon-desc>
+    		<lon-valdesc>float</lon-valdesc>
+    		<width-desc>specify the browser window width (default is 1280)</width-desc>
+			<width-default>1280</width-default>
+			<width-valdesc>integer</width-valdesc>
+			<height-desc>specify the browser window height (default is 800)</height-desc>
+			<height-default>800</height-default>
+			<height-valdesc>integer</height-valdesc>
+		</browser>
+		<engine>
+			<autocomplete-desc>select first autocomplete suggestion (disabled by default)</autocomplete-desc>
+			<autocomplete-default>false</autocomplete-default>
+		</engine>
+	</cli>
+</diadem>

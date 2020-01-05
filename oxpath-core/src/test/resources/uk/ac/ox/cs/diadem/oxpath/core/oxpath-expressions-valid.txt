@@ -1,0 +1,23 @@
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<test=string(.)>
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{$test}/following::field()[1]/{click}//a:<test=string(.)>
+((/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click}//a:<test=string(.)>) | (/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click}//a:<test=string(.)>))
+(/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click}//a:<test=string(.)>)[@href]
+((/descendant::input[@type='text'][1]/{"test"}/following::field()[--1]/{click}//a:<test=string(.)>) | (/descendant::input[@type='text'][1]/{"test"}/following::field()[1]/{click}//a:<test=string(.)>))[@href]
+/(/div/html)*/{click}
+/(/div/html)*/(/div/html)*/{click}
+html/(div/html)*/(div/html)*/{click}
+html//div[position()=2][h1]
+html//div[4][h1]
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<test=string(.)>
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<testt:x=string(.)>
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<testt:x(rrr)>
+doc("http://www.amazon.com")/descendant::input[@type='text'][1]/div/input/{"test"}/following::field()[1]/{click}//a:<testt:x(rrr, g:g)>
+doc("http://www.amazon.com")/a:<xx=qualify-url()>
+doc("http://www.amazon.com")/a:<xx=qualify-url(.)>
+doc("http://www.amazon.com")/a:<xx=dom-property("xxxxx")>
+doc("http://www.amazon.com")/a:<xx=select-text()>
+doc("http://www.amazon.com")/a:<xx=select-text(.)>
+doc("http://www.amazon.com")/a:<xx=innerhtml()>
+doc("http://www.amazon.com")/a:<xx=innerhtml(.)>
+doc("http://www.amazon.com")/a:<xx=outerhtml()>
+doc("http://www.amazon.com")/a:<xx=outerhtml(.)>  

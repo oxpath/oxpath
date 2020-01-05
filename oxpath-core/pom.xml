@@ -1,0 +1,155 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.oxpath</groupId>
+        <artifactId>oxpath-project</artifactId>
+        <version>1.0.4</version>
+    </parent>
+    <groupId>org.oxpath</groupId>
+    <artifactId>oxpath-core</artifactId>
+    <version>2.2.1</version>
+    <packaging>jar</packaging>
+    <name>OXPath</name>
+    <description>OXPath, a web data extraction language</description>
+    <developers>
+        <developer>
+            <id>sellers</id>
+            <name>Andrew Sellers</name>
+            <organization>DIADEM Lab - Department of Computer Science, University of Oxford</organization>
+            <organizationUrl>http://diadem.cs.ox.ac.uk</organizationUrl>
+            <roles>
+                <role>researcher</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>grasso</id>
+            <name>Giovanni Grasso</name>
+            <email>giovanni.grasso@cs.ox.ac.uk</email>
+            <url>http://www.giovannigrasso.it</url>
+            <organization>DIADEM Lab - Department of Computer Science, University of Oxford</organization>
+            <organizationUrl>http://diadem.cs.ox.ac.uk</organizationUrl>
+            <roles>
+                <role>researcher</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>schallhart</id>
+            <name>Christian Schallhart</name>
+            <email>christian.scahllhart@cs.ox.ac.uk</email>
+            <url>http://christian.schallhart.net</url>
+            <organization>DIADEM Lab - Department of Computer Science, University of Oxford</organization>
+            <organizationUrl>http://diadem.cs.ox.ac.uk</organizationUrl>
+            <roles>
+                <role>researcher</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>orsi</id>
+            <name>Giorgio Orsi</name>
+            <email>giorgio.orsi@cs.ox.ac.uk</email>
+            <url>http://orsigiorgio.net</url>
+            <organization>DIADEM Lab - Department of Computer Science, University of Oxford</organization>
+            <organizationUrl>http://diadem.cs.ox.ac.uk</organizationUrl>
+            <roles>
+                <role>researcher</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>furche</id>
+            <name>Tim Furche</name>
+            <email>tim.furche@cs.ox.ac.uk</email>
+            <url>https://www.cs.ox.ac.uk/people/tim.furche/</url>
+            <organization>DIADEM Lab - Department of Computer Science, University of Oxford</organization>
+            <organizationUrl>http://diadem.cs.ox.ac.uk</organizationUrl>
+            <roles>
+                <role>researcher</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>ruslanrf</id>
+            <name>Ruslan Fayzrakhmanov</name>
+            <email>ruslan.fayzrakhmanov@cs.ox.ac.uk</email>
+            <organization>OXPath Team</organization>
+            <organizationUrl>https://github.com/oxpath/</organizationUrl>
+            <roles>
+                <role>researcher</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+    <!-- TODO check overlappping classes -->
+    <dependencies>
+        <dependency>
+            <groupId>org.oxpath</groupId>
+            <artifactId>webapi</artifactId>
+            <version>1.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.oxpath</groupId>
+            <artifactId>util</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-spellchecker</artifactId>
+            <version>3.6.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

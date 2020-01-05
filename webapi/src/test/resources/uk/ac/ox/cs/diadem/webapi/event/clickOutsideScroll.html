@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Title</title>
+<script type="text/javascript">
+var currEvent = null;
+var append =null
+function getEvtType(evt) {
+  currEvent = evt.type;
+  append= document.getElementById("Etype").firstChild.nodeValue.trim();
+  document.getElementById("Etype").firstChild.nodeValue = append+' '+currEvent;
+}
+
+
+
+</script>
+</head>
+
+<body>
+<div>-</div>
+<div>-</div>
+<div>-</div>
+<div>-</div>
+<div>-</div>
+<div>-</div>
+
+
+<div id="myDiv" onclick="getEvtType(event)" ondblclick="getEvtType(event)" onmouseover="getEvtType(event)" 
+				onmousedown="getEvtType(event)" onmouseup="getEvtType(event)" onmousemove="getEvtType(event)" 
+				onmouseout="getEvtType(event)" onmouseenter="getEvtType(event)" oncontextmenu="getEvtType(event)"
+				onfocus="getEvtType(event)" onblur="getEvtType(event)">
+				
+				Press any key or click the mouse to get the event type.
+</div>
+<input id="in" onblur="getEvtType(event)" onfocus="getEvtType(event)">
+</input>
+<p>Event type: <span id="Etype"> </span></p>
+</body></html>
