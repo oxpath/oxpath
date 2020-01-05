@@ -2,7 +2,7 @@
                            BSD 3-Clause License
 -----------------------------------------------------------------------------
 
-Copyright (c) 2016-2017, OXPath Team
+Copyright (c) 2016-2019, OXPath Team
 
 All rights reserved.
 

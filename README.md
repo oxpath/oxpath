@@ -1,10 +1,8 @@
 # OXPath Project
 
 **Latest release of OXPath Project: 1.0.4**<br />
-**Latest release of [OXPath Core](oxpath-core): 2.2.1**
 
-**Documentation (OXPath Project):** [1.0.4 javadocs](https://oxpath.github.io/api-docs/oxpath-project/1.0.4/javadocs/index.html)<br />
-**Documentation (OXPath Core):** [2.2.1 javadocs](https://oxpath.github.io/api-docs/oxpath/2.2.1/javadocs/index.html)<br />
+**Documentation (OXPath Project):** [1.0.4 javadocs](https://oxpath.github.io/apidocs/oxpath/1.0.4/javadocs/index.html)<br />
 **Continuous Integration:** [![Build Status](https://travis-ci.org/oxpath/oxpath.svg?branch=master)](https://travis-ci.org/oxpath/oxpath)<br />
 **License:** [3-Clause BSD License](LICENSE.md)
 
