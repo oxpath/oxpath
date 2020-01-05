@@ -100,9 +100,9 @@ An example for the OXPath XML Output Handler:
 
 ## Documentation and References
 
-* The Javadoc API documents are available [online](https://oxpath.github.io/api-docs/oxpath-project/1.0.4/javadocs/index.html).
-* In the user manual "[Introduction to OXPath](https://arxiv.org/abs/1806.10899)" (2018) you can find a detail description of OXPath with various examples.
-* See also Furche et al. "[OXPath: A language for scalable data extraction, automation, and crawling on the deep web](https://dl.acm.org/doi/10.1007/s00778-012-0286-6)" (2013).
+* [The Javadoc API](https://oxpath.github.io/apidocs/oxpath/1.0.4/javadocs/index.html)
+* User manual: Fayzrakhmanov et al. "[Introduction to OXPath](https://arxiv.org/abs/1806.10899)" (2018)
+* Paper: Furche et al. "[OXPath: A language for scalable data extraction, automation, and crawling on the deep web](https://dl.acm.org/doi/10.1007/s00778-012-0286-6)" (2013)
 
 ## OXPath Syntax Highlighting
 
